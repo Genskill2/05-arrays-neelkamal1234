@@ -21,9 +21,9 @@ int min( int c[] , int m)
    return s;
 }
 
-float average( int a[] , int o)
-{ float v =0;
-     for( int k=0;k<o;k++){
+float average( int a[] , int b)
+{ float v =0.0000;
+     for( int k=0;k<b;k++){
           v += a[k];
      }
    v = v/2;
