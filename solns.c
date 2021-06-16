@@ -88,7 +88,7 @@ int factors( int g , int ef[])
                             l++;
                             g = g/a; 
 
-                        }while(g%a==0)
+                        }while(g%a==0);
                      a++;
                    }
             }
