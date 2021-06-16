@@ -26,7 +26,7 @@ float average( int a[] , int b)
      for( int k=0;k<b;k++){
           v += a[k];
      }
-   v = v/2;
+   v = v/b;
  return v;
 }
          
