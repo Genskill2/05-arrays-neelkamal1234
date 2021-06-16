@@ -46,8 +46,15 @@ int mode( int e[] , int h)
      a++;
      count =0;
    }
-     
-     return max( counts,d);
+     int sm =count[0]; int sl=0;
+     for( int l=0;l<d;l++)
+     {   if( sm < count[l])
+            { sm =count[l];
+              sl = l;
+            }
+     }
+    
+    return sl;         
    }
      
      
