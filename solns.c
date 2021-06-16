@@ -13,7 +13,7 @@ int max(int z[] , int n)
      
 int min( int c[] , int m)
 { int s =c[0];
-   for( int j=0;j<m:j++){
+   for( int j=0;j<m;j++){
        if( c[j]<s ){
            s = c[j];
        }
