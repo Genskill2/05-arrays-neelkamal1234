@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 int max(int z[] , int n)
-{ int l = z[0];
-  for( int i=1;i<n;i++){
+{ int l = 0;
+  for( int i=0;i<n;i++){
       if( z[i]>l ){
         l = z[i];
       }
@@ -13,7 +13,7 @@ int max(int z[] , int n)
      
 int min( int c[] , int m)
 { int s = c[0];
-   for( int i=1;i<m:i++){
+   for( int i=0;i<m:i++){
        if( c[i]<s ){
            s = c[i];
        }
