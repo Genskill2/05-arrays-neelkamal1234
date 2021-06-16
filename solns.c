@@ -64,7 +64,7 @@ int mode( int e[] , int h)
    }
      
 
-int factors( int g , int ef[])
+int factors( int g , int ef[*])
 {  int i=2; 
    int a=2; 
     int l=0;
