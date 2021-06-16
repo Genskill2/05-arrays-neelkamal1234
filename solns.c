@@ -29,7 +29,48 @@ float average( int a[] , int b)
    v = v/b;
  return v;
 }
-         
+    
+int mode( int e[] , int h)
+{ int counts[h] ;
+ int count =0;
+ int a =0;
+ int d = max(e ,h);
+
+   while( a<=d){
+       
+     for(int i=0;i<h;i++){
+            if( a == e[i])
+               count++ ;
+       }
+     counts[a]=count;
+     a++;
+     count =0;
+   }
+     
+     return max( counts,d);
+   }
+     
+     
+      
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
      
 
 
