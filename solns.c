@@ -32,26 +32,32 @@ float average( int a[] , int b)
     
 int mode( int e[] , int h)
 { int counts[h] ;
- int count =0;
- int a =0;
- int d = max(e ,h);
+  int count =0;
+  int a =0;
+  int d = max(e ,h);
 
-   while( a<=d){
-       
-     for(int i=0;i<h;i++){
+   while( a<=d)
+   {   
+     for(int i=0;i<h;i++)
+       { 
             if( a == e[i])
-               count++ ;
-       }
-     counts[a]=count;
-     a++;
-     count =0;
-   }
-     int sm =count[0]; int sl=0;
+            {count= count+1;}
+             
+                   }
+            counts[a]=count;
+            a++;
+            count =0;
+        }
+            
+ int sm =counts[0]; 
+ int sl=0;
+ 
      for( int l=0;l<d;l++)
-     {   if( sm < count[l])
-            { sm =count[l];
-              sl = l;
-            }
+       {  
+            if( sm < counts[l])
+               { sm =counts[l];
+                 sl = l;
+                }
      }
     
     return sl;         
