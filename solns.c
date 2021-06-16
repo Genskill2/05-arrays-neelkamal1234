@@ -96,11 +96,13 @@ int mode( int e[] , int h)
     }
 
    }
+     int p;
      p = h+1;
-    return p
+    return p;
+ }
   
    
- }
+ 
 
 
 
