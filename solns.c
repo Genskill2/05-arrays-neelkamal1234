@@ -64,34 +64,38 @@ int mode( int e[] , int h)
    }
      
 
-
- int factors( int g , int ef[])
- { int i=2; int a=2; int l=0;
-   int count =0;
+int factors( int g , int ef[])
+{  int i=2; 
+   int a=2; 
+    int l=0;
+   int c =0;
+ 
     while( g!=1)
    { 
           while(i<=a)
             {if(a%i==0)
-               {count++;}
+               { c++;}
              }
 
          
-           if( count<2)
+           if( c<2)
            {
 
                      if( g%a==0)
                    {
                       do{
-                           ef[l]==a;
-                            l++; g=g/a; 
+                           ef[l] =a;
+                            l++;
+                            g = g/a; 
 
                         }while(g%a==0)
                      a++;
                    }
             }
+      c =0;
    }
       
-     return l;
+  return l;
 }
         
  
