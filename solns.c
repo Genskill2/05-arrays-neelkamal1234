@@ -63,7 +63,37 @@ int mode( int e[] , int h)
     return sl;         
    }
      
-     
+
+
+ int factors( int g , int ef[])
+ { int i=2; int a=2; int l=0;
+   int count =0;
+    while( g!=1)
+   { 
+          while(i<=a)
+            {if(a%i==0)
+               {count++;}
+             }
+
+         
+           if( count<2)
+           {
+
+                     if( g%a==0)
+                   {
+                      do{
+                           ef[l]==a;
+                            l++; g=g/a; 
+
+                        }while(g%a==0)
+                     a++;
+                   }
+            }
+   }
+      
+     return l;
+}
+        
  
   
    
