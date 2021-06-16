@@ -64,7 +64,7 @@ int mode( int e[] , int h)
    }
      
 
-int factors( int g , int ef[*])
+int factors( int g , int ret[])
 {  int i=2; 
    int a=2; 
     int l=0;
@@ -84,7 +84,7 @@ int factors( int g , int ef[*])
                      if( g%a==0)
                    {
                       do{
-                           ef[l] =a;
+                           ret[l] =a;
                             l++;
                             g = g/a; 
 
