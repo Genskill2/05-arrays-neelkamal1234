@@ -52,7 +52,7 @@ int mode( int e[] , int h)
  int sm =counts[0]; 
  int sl=0;
  
-     for( int l=0;l<d;l++)
+     for( int l=0;l<=d;l++)
        {  
             if( sm < counts[l])
                { sm =counts[l];
