@@ -13,9 +13,9 @@ int max(int z[] , int n)
      
 int min( int c[] , int m)
 { int s =c[0];
-   for( int i=0;i<m:i++){
-       if( c[i]<s ){
-           s = c[i];
+   for( int j=0;j<m:j++){
+       if( c[j]<s ){
+           s = c[j];
        }
    }
    return s;
