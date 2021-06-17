@@ -64,41 +64,24 @@ int mode( int e[] , int h)
    }
      
 
-int factors( int g , int ret[])
-{  int i=2; 
-   int a=2; 
-    int l=0;
-   int c =0;
- 
-    while( g!=1)
-   { 
-          while(i<=a)
-            {if(a%i==0)
-               { c++;}
-             }
 
-         
-           if( c<2)
-           {
 
-                     if( g%a==0)
-                   {
-                      do{
-                           ret[l] =a;
-                            l++;
-                            g = g/a; 
-
-                        }while(g%a==0);
-                     a++;
-                   }
-            }
-      c =0;
-   }
-      
-  return l;
-}
         
- 
+int factors(int n,int x[])
+{
+int i;
+int p=0;
+for(i=2;n>1;i++)
+  {
+   while(n%i==0)
+    {
+    x[p]=i;
+    n=n/i;
+    p++;
+    }
+  }
+return p;
+}
   
    
  
